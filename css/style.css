@@ -6,3 +6,112 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+header{
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    padding-top:200px;
+}
+
+img{
+    width: 100%;
+}
+
+
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar{
+    
+    background-color:orange;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.categorie{
+    font-size: 40px;
+    color: white;
+}
+
+.utility{
+    font-size: 40px;
+}
+
+.card {
+    width: calc(100% / 3 - (40px / 3));
+    border: solid 1px #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+.discount-label {
+    color: white;
+    background-color: red;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    width: 11%;
+    height: 3%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sostenibility{
+    color: white;
+    background-color: green;
+    position: absolute;
+    bottom: 7%;
+    left:13%;
+    height: 3%;
+    width: 18%;
+     font-size: 30px;
+    text-align: center;
+}
+
+.cuore {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    font-size: 60px;
+    color: black;
+    display: none;
+    background-color: white;
+}
+
+.fa-heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card:hover .cuore {
+    display: block;
+}
+
+.cuore:hover{
+    color:red;
+}
